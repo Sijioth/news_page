@@ -11,84 +11,93 @@
 </head>
 <body>
     <header class="wrapper">
-        <img src="../template/images/impacto-logo.png" alt="Webimpacto" class="logo">
+        <h1 class="visuallyhidden">Webimpacto</h1>
+        <a href="#">
+            <img src="../template/images/impacto-logo.png" alt="Webimpacto" class="logo">
+        </a>
         <ul class="nav">
-            <li class="cumber-bread noselect"></li>
+            <li class="cumber-bread noselect">&#8226;</li>
             <li class="nav__link">
                 <a href="#">About us</a>
             </li>
-            <li class="cumber-bread noselect"></li>
+            <li class="cumber-bread noselect">&#8226;</li>
             <li class="nav__link">
                 <a href="#">Products</a>
             </li>
-            <li class="cumber-bread noselect"></li>
+            <li class="cumber-bread noselect">&#8226;</li>
             <li class="nav__link">
                 <a href="#">Services</a>
             </li>
-            <li class="cumber-bread noselect"></li>
+            <li class="cumber-bread noselect">&#8226;</li>
             <li class="nav__link">
                 <a href="#">News</a>
             </li>
-            <li class="cumber-bread noselect"></li>
+            <li class="cumber-bread noselect">&#8226;</li>
             <li class="nav__link">
                 <a href="#">Contacts</a>
             </li>
-            <li class="cumber-bread noselect"></li>
+            <li class="cumber-bread noselect">&#8226;</li>
         </ul>
     </header>
-    <main class="wrapper">
-        <p class="heading">
-            <h2 class="title">News</h2>
-            <ul class="pagination">
-                <li class="start"></li>
-                <li class="previous"></li>
-                <li class="">1</li>
-                <li class="">2</li>
-                <li class="">3</li>
-                <li class="">4</li>
-                <li class="">5</li>
-                <li class="">6</li>
-                <li class="">7</li>
-                <li class="next"></li>
-                <li class="end"></li>
-            </ul>
-        </p>
-        <div class="news">
-            <?php foreach ($newsList as $newsItem):?>
-                <div class="news__item">
-                    <img src="<?php echo $newsItem['preview'];?>" alt="News item image" class="news__item--img">
-                    <p class="news__item--heading">
-                        <a href="/news/<?php echo $newsItem['id'];?>">
-                            <h3 class="news__item--title">
-                                <?php echo $newsItem['title'];?>
-                            </h3>
-                        </a>
-                        <span class="news__item--date">
-                            <?php echo $newsItem['date'];?>
-                        </span>
-                    </p>
-                    <p class="news__item--body">
-                        <?php echo $newsItem['short_content'];?>
-                    </p>
-                    <p class="news__item--btn">
-                        <a href="/news/<?php echo $newsItem['id'];?>">Read more &#8227;</a>
-                    </p>
-                </div>
-            <?php endforeach;?>
-        </div>
-        <ul class="pagination">
-            <li class="start"></li>
-            <li class="previous"></li>
-            <li class="">1</li>
-            <li class="">2</li>
-            <li class="">3</li>
-            <li class="">4</li>
-            <li class="">5</li>
-            <li class="">6</li>
-            <li class="">7</li>
-            <li class="next"></li>
-            <li class="end"></li>
-        </ul>
+    <main>
+        <section class="wrapper">
+            <div class="heading">
+                <h2 class="title">News</h2>
+                <ul class="pagination">
+                    <li class="start noselect">&#8227;|</li>
+                    <li class="previous noselect">&#8227;&#8227;</li>
+                    <li class="">1</li>
+                    <li class="">2</li>
+                    <li class="">3</li>
+                    <li class="">4</li>
+                    <li class="">5</li>
+                    <li class="">6</li>
+                    <li class="">7</li>
+                    <li class="next noselect">&#8227;&#8227;</li>
+                    <li class="end noselect">&#8227;|</li>
+                </ul>
+            </div>
+            <div class="news">
+                <?php foreach ($newsList as $newsItem):?>
+                    <div class="news__item">
+                        <div>
+                            <img src="<?php echo $newsItem['preview'];?>" alt="News item image" class="news__item--img">
+                        </div>
+                        <div class="news__item--content">
+                            <a href="/news/<?php echo $newsItem['id'];?>">
+                                <h3 class="news__item--title">
+                                    <?php echo $newsItem['title'];?>
+                                </h3>
+                            </a>
+                            <span class="news__item--date">
+                                <?php echo $newsItem['date'];?>
+                            </span>
+                            <div class="news__item--body">
+                                <?php echo $newsItem['short_content'];?>
+                            </div>
+                            <div class="news__item--btn">
+                                <a href="/news/<?php echo $newsItem['id'];?>">Read more &#8227;</a>
+                            </div>
+                        </div>
+                    </div>
+                <?php endforeach;?>
+            </div>
+            <div class="footing">
+                <ul class="pagination">
+                    <li class="start noselect">&#8227;|</li>
+                    <li class="previous noselect">&#8227;&#8227;</li>
+                    <li class="">1</li>
+                    <li class="">2</li>
+                    <li class="">3</li>
+                    <li class="">4</li>
+                    <li class="">5</li>
+                    <li class="">6</li>
+                    <li class="">7</li>
+                    <li class="next noselect">&#8227;&#8227;</li>
+                    <li class="end noselect">&#8227;|</li>
+                </ul>
+            </div>
+        </section>
     </main>
     <footer class="wrapper">
         <ul class="nav">

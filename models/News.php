@@ -47,7 +47,7 @@ class News
 
     $newsList = array();
 
-    $result = $db->query('SELECT id, title, date, short_content, preview FROM news ORDER BY date DESC LIMIT 3');
+    $result = $db->query('SELECT id, title, DATE_FORMAT(date, "%d %b %Y") AS date, short_content, preview FROM news ORDER BY date DESC LIMIT 3');
 
     $i = 0;
     while ($row = $result->fetch()) {
