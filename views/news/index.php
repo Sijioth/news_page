@@ -46,13 +46,13 @@
                 <ul class="pagination">
                     <li class="start noselect">&#8227;|</li>
                     <li class="previous noselect">&#8227;&#8227;</li>
-                    <li class="">1</li>
-                    <li class="">2</li>
-                    <li class="">3</li>
-                    <li class="">4</li>
-                    <li class="">5</li>
-                    <li class="">6</li>
-                    <li class="">7</li>
+                    <li class="page-number">1</li>
+                    <li class="page-number">2</li>
+                    <li class="page-number">3</li>
+                    <li class="page-number">4</li>
+                    <li class="page-number">5</li>
+                    <li class="page-number">6</li>
+                    <li class="page-number">7</li>
                     <li class="next noselect">&#8227;&#8227;</li>
                     <li class="end noselect">&#8227;|</li>
                 </ul>
@@ -86,13 +86,13 @@
                 <ul class="pagination">
                     <li class="start noselect">&#8227;|</li>
                     <li class="previous noselect">&#8227;&#8227;</li>
-                    <li class="">1</li>
-                    <li class="">2</li>
-                    <li class="">3</li>
-                    <li class="">4</li>
-                    <li class="">5</li>
-                    <li class="">6</li>
-                    <li class="">7</li>
+                    <li class="page-number">1</li>
+                    <li class="page-number">2</li>
+                    <li class="page-number">3</li>
+                    <li class="page-number">4</li>
+                    <li class="page-number">5</li>
+                    <li class="page-number">6</li>
+                    <li class="page-number">7</li>
                     <li class="next noselect">&#8227;&#8227;</li>
                     <li class="end noselect">&#8227;|</li>
                 </ul>
