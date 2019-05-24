@@ -229,8 +229,8 @@ h3 {
     padding: inherit;
 }
 
-footer.wrapper {
-    padding-top: 10px;
+footer .wrapper {
+    padding: 8px 0;
 }
 
 footer .nav li {
@@ -286,7 +286,40 @@ footer .nav a:hover,
 
 .copyright {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background: #22b9ff;
+    background: #29b2e6;
+    color: #ffffff;
 }
 
-.copyright__content
+.copyright__content {
+    display: flex;
+    justify-content: space-between;
+    font-size: .6rem;
+}
+
+.copyright__content p {
+    display: flex;
+    align-items: flex-start;
+    /* font-size: .6rem; */
+}
+
+.copyright__content p span {
+    padding: 0 10px 0 25px;
+    font-weight: 700;
+    font-size: .9rem;
+    line-height: 10px;
+    color: #52636b;
+}
+
+.copyright__content a {
+    display: flex;
+    align-items: center;
+    color: inherit;
+    font-size: 8px;
+    padding: 0px 8px;
+}
+
+.copyright__content img {
+    width: 12px;
+    height: 11px;
+    padding-left: 15px;
+}

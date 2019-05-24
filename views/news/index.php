@@ -139,10 +139,14 @@
         </section>
         <section class="copyright">
             <div class="copyright__content wrapper">
-                Webimpacto S.L. <span>&#8226;</span> News
-                <a href="https://webimpacto.agency" target="_blank" rel="noopener noreferrer">Powered by impacto
-                    <img src="../template/images/logo-img.png" alt="&#174;">
-                </a>
+                <p>
+                    Webimpacto S.L. <span>&#8226;</span> news
+                </p>
+                <p>
+                    <a href="https://webimpacto.agency" target="_blank" rel="noopener noreferrer">Powered by impacto
+                        <img src="../template/images/logo-img.png" alt="&#174;">
+                    </a>
+                </p>
             </div>
         </section>
     </footer>
