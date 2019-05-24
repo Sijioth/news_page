@@ -226,22 +226,28 @@ h3 {
     padding: inherit;
 }
 
-/* .news__item--img {
-    grid-area: img;
+footer.wrapper {
+    padding-top: 10px;
 }
 
-.news__item--title {
-    grid-area: title;
+footer .nav li {
+    padding: 0 15px;
 }
 
-.news__item--date {
-    grid-area: date;
+footer .nav li:last-child {
+    padding-right: 0;
 }
 
-.news__item--body {
-    grid-area: body;
+footer .nav a {
+    color: #52636b;
+    font-size: .5em;
+    text-decoration: underline;
 }
 
-.news__item--btn {
-    grid-area: btn;
-} */
+footer .nav a:hover {
+    color: #d1f0f3;
+}
+
+.contacts img {
+    transform: scale(.5);
+}
