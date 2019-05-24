@@ -7,6 +7,7 @@
     <title>Webimpacto</title>
     <link rel="stylesheet" href="../template/css/reset.css">
     <link rel="stylesheet" href="../template/css/style.css">
+    <link rel="stylesheet" href="../template/css/responsive.css">
     <link rel="shortcut icon" href="../template/images/favicon.png" type="image/x-icon">
 </head>
 <body>
@@ -16,27 +17,27 @@
             <img src="../template/images/impacto-logo.png" alt="Webimpacto" class="logo">
         </a>
         <ul class="nav">
-            <li class="cumber-bread noselect">&#8226;</li>
+            <li class="noselect">&#8226;</li>
             <li class="nav__link">
                 <a href="#">About us</a>
             </li>
-            <li class="cumber-bread noselect">&#8226;</li>
+            <li class="noselect">&#8226;</li>
             <li class="nav__link">
                 <a href="#">Products</a>
             </li>
-            <li class="cumber-bread noselect">&#8226;</li>
+            <li class="noselect">&#8226;</li>
             <li class="nav__link">
                 <a href="#">Services</a>
             </li>
-            <li class="cumber-bread noselect">&#8226;</li>
+            <li class="noselect">&#8226;</li>
             <li class="nav__link">
                 <a href="#">News</a>
             </li>
-            <li class="cumber-bread noselect">&#8226;</li>
+            <li class="noselect">&#8226;</li>
             <li class="nav__link">
                 <a href="#">Contacts</a>
             </li>
-            <li class="cumber-bread noselect">&#8226;</li>
+            <li class="noselect">&#8226;</li>
         </ul>
     </header>
     <main>
@@ -60,7 +61,7 @@
             <div class="news">
                 <?php foreach ($newsList as $newsItem):?>
                     <div class="news__item">
-                        <div>
+                        <div class="news__item--image">
                             <img src="<?php echo $newsItem['preview'];?>" alt="News item image" class="news__item--img">
                         </div>
                         <div class="news__item--content">
@@ -125,13 +126,13 @@
                 <img src="../template/images/impacto-logo.png" alt="Webimpacto" class="logo-small">
                 <ul class="address">
                     <li class="">Calle Ciudad Real 2</li>
-                    <li class="cumber-bread noselect">|</li>
+                    <li class="noselect">|</li>
                     <li class="">Yuncos Valley</li>
-                    <li class="cumber-bread noselect">|</li>
+                    <li class="noselect">|</li>
                     <li class="">Toledo, Spain</li>
-                    <li class="cumber-bread noselect">|</li>
+                    <li class="noselect">|</li>
                     <li class="tel"><a href="tel:+34 900 900 900">Tel +34 900 900 900</a></li>
-                    <li class="cumber-bread noselect">|</li>
+                    <li class="noselect">|</li>
                     <li class="fax"><a href="fax:+34 900900900">Fax +34 900900900</a></li>
                 </ul>
                 <a class="mailto" href="mailto:info@webimpacto.com">info@webimpacto.com</a>
