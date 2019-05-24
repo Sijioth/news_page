@@ -64,19 +64,22 @@
                             <img src="<?php echo $newsItem['preview'];?>" alt="News item image" class="news__item--img">
                         </div>
                         <div class="news__item--content">
-                            <a href="/news/<?php echo $newsItem['id'];?>">
-                                <h3 class="news__item--title">
-                                    <?php echo $newsItem['title'];?>
-                                </h3>
-                            </a>
-                            <span class="news__item--date">
-                                <?php echo $newsItem['date'];?>
-                            </span>
+                            <div class="news__item--title">
+                                <a href="/news/<?php echo $newsItem['id'];?>">
+                                    <h3>
+                                        <?php echo $newsItem['title'];?>
+                                    </h3>
+                                </a>
+                                <span class="news__item--date">
+                                    <?php echo $newsItem['date'];?>
+                                </span>
+                            </div>
+
                             <div class="news__item--body">
                                 <?php echo $newsItem['short_content'];?>
                             </div>
                             <div class="news__item--btn">
-                                <a href="/news/<?php echo $newsItem['id'];?>">Read more &#8227;</a>
+                                <a href="/news/<?php echo $newsItem['id'];?>">Read more <span>&#8227;</span></a>
                             </div>
                         </div>
                     </div>
