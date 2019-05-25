@@ -11,7 +11,7 @@
                     <a href="#">Glossary</a>
                 </li>
                 <li>
-                    <a href="#">?Arbolegal?</a>
+                    <a href="#">Privacy Policy</a>
                 </li>
                 <li>
                     <a href="#">Contacts</a>
