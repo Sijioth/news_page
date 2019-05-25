@@ -20,13 +20,15 @@
             </div>
             <div class="news">
                 <?php foreach ($newsList as $newsItem):?>
+                    <?php include ROOT . '/views/layouts/modal.php'?>
+                    <!-- News item section -->
                     <div class="news__item">
                         <div class="news__item--image">
-                            <img src="<?php echo $newsItem['preview'];?>" alt="News item image" class="news__item--img">
+                            <img src="<?php echo $newsItem['preview'];?>" alt="<?php echo $newsItem['title'];?>" class="news__item--img">
                         </div>
                         <div class="news__item--content">
                             <div class="news__item--title">
-                                <a href="/news/<?php echo $newsItem['id'];?>">
+                                <a href="#openModal-<?php echo $newsItem['id'];?>">
                                     <h3>
                                         <?php echo $newsItem['title'];?>
                                     </h3>
@@ -35,7 +37,6 @@
                                     <?php echo $newsItem['date'];?>
                                 </span>
                             </div>
-
                             <div class="news__item--body">
                                 <?php echo $newsItem['short_content'];?>
                             </div>
@@ -46,6 +47,7 @@
                     </div>
                 <?php endforeach;?>
             </div>
+
             <div class="footing">
                 <ul class="pagination">
                     <li class="start noselect">&#8227;|</li>
