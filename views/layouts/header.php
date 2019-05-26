@@ -14,32 +14,34 @@
 </head>
 <body class="preload">
 <!-- <body> -->
-    <header class="wrapper">
-        <h1 class="visuallyhidden">Webimpacto</h1>
-        <a href="#">
-            <img src="../template/images/impacto-logo.png" alt="Webimpacto" class="logo">
-        </a>
-        <ul class="nav">
-            <li class="noselect">&#8226;</li>
-            <li class="nav__link">
-                <a href="#">About us</a>
-            </li>
-            <li class="noselect">&#8226;</li>
-            <li class="nav__link">
-                <a href="#">Products</a>
-            </li>
-            <li class="noselect">&#8226;</li>
-            <li class="nav__link">
-                <a href="#">Services</a>
-            </li>
-            <li class="noselect">&#8226;</li>
-            <li class="nav__link">
-                <a href="#">News</a>
-            </li>
-            <li class="noselect">&#8226;</li>
-            <li class="nav__link">
-                <a href="#">Contacts</a>
-            </li>
-            <li class="noselect">&#8226;</li>
-        </ul>
+    <header>
+        <section class="wrapper">
+            <h1 class="visuallyhidden">Webimpacto</h1>
+            <a href="/">
+                <img src="../template/images/impacto-logo.png" alt="Webimpacto" class="logo">
+            </a>
+            <ul class="nav">
+                <li class="noselect">&#8226;</li>
+                <li class="nav__link">
+                    <a href="#">About us</a>
+                </li>
+                <li class="noselect">&#8226;</li>
+                <li class="nav__link">
+                    <a href="#">Products</a>
+                </li>
+                <li class="noselect">&#8226;</li>
+                <li class="nav__link">
+                    <a href="#">Services</a>
+                </li>
+                <li class="noselect">&#8226;</li>
+                <li class="nav__link">
+                    <a href="#">News</a>
+                </li>
+                <li class="noselect">&#8226;</li>
+                <li class="nav__link">
+                    <a href="#">Contacts</a>
+                </li>
+                <li class="noselect">&#8226;</li>
+            </ul>
+        </section>
     </header>
