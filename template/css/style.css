@@ -1,7 +1,28 @@
 
+html,
 body {
     min-width: 310px;
+    height: 100%;
+    /* margin: 0; */
 }
+
+/* body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 655px;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.wrapper {
+    flex-shrink: 0;
+} */
+
 a {
     text-decoration: none;
     color: #c9c9c9;
@@ -10,7 +31,8 @@ a {
 
 /* body */
 a:hover,
-header a:hover {
+header a:hover,
+.pagination a:hover {
     color: #5497b1;
     cursor: pointer;
 }
@@ -74,8 +96,9 @@ main {
 .heading {
     display: flex;
     justify-content: space-between;
-    padding: 9px 0;
-    margin-top: 10px;
+    align-items: baseline;
+    /* padding: 9px 0; */
+    margin: 10px 0 15px;
     border-top: 1px solid #f2f2f2;
 }
 
@@ -84,7 +107,7 @@ main {
 }
 
 .heading,
-.pagination {
+.pagination a {
     color: #6a6a6a;
 }
 
@@ -95,7 +118,8 @@ h2 {
 }
 
 .nav,
-.pagination {
+.pagination,
+.pagination li {
     display: flex;
     float: right;
     align-items: center;
@@ -103,14 +127,37 @@ h2 {
     /* justify-content: space-between; */
 }
 
-.noselect {
+.pagination li:not(:nth-child(-n+2)):not(:nth-last-child(-n+2)){
+    text-decoration: underline;
+    user-select: none;
+}
+
+.pagination .active {
+    /* font-size: 150%; */
+    text-decoration: none !important;
+}
+
+.noselect,
+.active {
     user-select: none;
 }
 
 .pagination li {
     padding: 0 5px;
-    font-size: .7em;
+    font-size: .8em;
+    font-weight: 100;
+
 }
+
+.pagination li:nth-child(-n+2) {
+    transform: rotate(180deg);
+}
+
+/* .pagination li:nth-child(-n+2) a,
+.pagination li:nth-last-child(-n+2) a {
+    font-size: 1rem;
+    font-weight: 700;
+} */
 
 .pagination li:last-child {
     padding-right: 0;
