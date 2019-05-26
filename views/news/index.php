@@ -3,9 +3,9 @@
     <main>
         <section class="wrapper">
             <div class="heading">
-                <span>
+                <!-- <div> -->
                     <h2 class="title">News</h2>
-                </span>
+                <!-- </div> -->
                 <?php echo $pagination->get();?>
             </div>
             <div class="news">
