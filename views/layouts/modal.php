@@ -1,5 +1,5 @@
 <!-- Modal window -->
-<div id="openModal-<?php echo $newsItem['id'];?>" class="modalDialog">
+<div id="openModal-<?php echo $newsItem['id'];?>" class="modal-dialog">
     <div class="modal__window">
         <a href="#close" title="Close" class="close">X</a>
         <div class="modal__content">

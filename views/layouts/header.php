@@ -7,10 +7,13 @@
     <title>Webimpacto</title>
     <link rel="stylesheet" href="../template/css/reset.css">
     <link rel="stylesheet" href="../template/css/style.css">
+    <link rel="stylesheet" href="../template/css/modal.css">
     <link rel="stylesheet" href="../template/css/responsive.css">
     <link rel="shortcut icon" href="../template/images/favicon.png" type="image/x-icon">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> -->
 </head>
-<body>
+<body class="preload">
+<!-- <body> -->
     <header class="wrapper">
         <h1 class="visuallyhidden">Webimpacto</h1>
         <a href="#">

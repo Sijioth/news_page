@@ -1,4 +1,4 @@
-<footer>
+    <footer>
         <section class="wrapper">
             <ul class="nav">
                 <li>
@@ -46,5 +46,6 @@
             </div>
         </section>
     </footer>
+    <script src="../template/js/index.js"></script>
 </body>
 </html>
