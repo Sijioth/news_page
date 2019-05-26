@@ -96,9 +96,9 @@ main {
 .heading {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    /* padding: 9px 0; */
-    margin: 10px 0 15px;
+    /* align-items: baseline; */
+    padding: 5px 0 0;
+    margin: 10px 0;
     border-top: 1px solid #f2f2f2;
 }
 
@@ -114,7 +114,7 @@ main {
 h2 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 100;
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 
 .nav,
@@ -280,7 +280,7 @@ h3 {
 }
 
 footer .wrapper {
-    padding: 8px 0;
+    padding: 5px 0 10px;
 }
 
 footer .nav li {
