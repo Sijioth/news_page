@@ -53,13 +53,9 @@
                 var id = $(this).attr("data-id");
                 $.post("/news/page-" + id, function(data) {
                     $("body").html(data);
-                    // $(".news").html(data).hide().fadeIn(300);
                     window.history.pushState("", "", "/news/page-" + id);
                 });
             })
-            // $(".close").click(function () {
-            //     window.history.replaceState("", "", "/news/page-" + id);
-            // })
         })
     </script>
 </body>

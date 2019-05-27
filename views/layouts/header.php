@@ -13,7 +13,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 </head>
 <body class="preload">
-<!-- <body> -->
     <header>
         <section class="wrapper">
             <h1 class="visuallyhidden">Webimpacto</h1>

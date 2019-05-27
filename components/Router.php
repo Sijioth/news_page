@@ -3,8 +3,7 @@
 class Router {
   private $routes;
 
-  public function __construct()
-  {
+  public function __construct() {
     $routesPath = ROOT.'/config/routes.php';
     $this->routes = include($routesPath);
   }
@@ -20,49 +19,28 @@ class Router {
   }
 
 
-  public function run()
-  {
+  public function run() {
     // Get query string
     $uri = $this->getURI();
-    // echo $uri;
 
     // Chech if query present in routes.php
     foreach ($this->routes as $uriPattern => $path) {
-      // echo "<br>$uriPattern -> $path";
 
       // Compare $uriPattern and $uri
       if (preg_match("~$uriPattern~", $uri)) {
-        // echo $path;
-
-        // echo '<br/>Где ищем (запрос, который набрал пользователь): '.$uri;
-        // echo '<br/>Что ищем (совпадение из правила): '.$uriPattern;
-        // echo '<br/>Кто обрабатывает: '.$path;
 
         // Get internal path from external path according to rhe rule
         $internalRoute = preg_replace("~$uriPattern~", $path, $uri);
-        // echo '<br/><br/>Нужно сформировать: '.$internalRoute;
 
         // Define controller, action and parameters to process query
         $segments = explode('/', $internalRoute);
 
-        // echo '<pre>';
-        // print_r($segments);
-        // echo '</pre>';
-
         $controllerName = array_shift($segments).'Controller';
         $controllerName = ucfirst($controllerName);
-        // echo $controllerName;
 
         $actionName = 'action'.ucfirst(array_shift($segments));
-        // echo $actionName;
 
-        // echo 'controller name: '.$controllerName;
-        // echo 'action name: '.$actionName;
         $parameters = $segments;
-        // echo '<pre>';
-        // print_r($parameters);
-        // echo '</pre>';
-        // die();
 
         // Include controller-class file
         $controllerFile = ROOT.'/controllers/'.$controllerName.'.php';
@@ -78,11 +56,5 @@ class Router {
         }
       }
     }
-
-
-
-
-    // print_r($this->routes);
-    // echo 'Class Router, method run';
   }
 }

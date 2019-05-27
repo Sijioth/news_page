@@ -1,35 +1,7 @@
 <?php
 
-// include_once ROOT.'/components/Db.php';
-
 class News {
   const NEWS_ON_PAGE = 3;
-  /**
-   * Returns single news item with specified id
-   * @param integer $id
-   */
-  public static function getNewsItemById($id) {
-    // DB-request
-    $id = intval($id);
-
-    if ($id) {
-      // $host = 'localhost';
-      // $dbname = 'impacto_site';
-      // $user = 'root';
-      // $password = '';
-      // $db = new PDO("mysql:host=$host;dbname=$dbname", $user, $password);
-      $db = Db::getConnection();
-
-      $result = $db->query('SELECT * FROM news WHERE id='.$id);
-
-      // $result->setFetchMode(PDO::FETCH_NUM);
-      $result->setFetchMode(PDO::FETCH_ASSOC);
-
-      $newsItem = $result->fetch();
-
-      return $newsItem;
-    }
-  }
 
   /**
    * Returns total news items
@@ -51,12 +23,7 @@ class News {
   public static function getNewsList($page = 1) {
     $page = intval($page);
     $offset = ($page - 1) * self::NEWS_ON_PAGE;
-    // DB-request
-    // $host = 'localhost';
-    // $dbname = 'impacto_site';
-    // $user = 'root';
-    // $password = '';
-    // $db = new PDO("mysql:host=$host;dbname=$dbname", $user, $password);
+
     $db = Db::getConnection();
 
     $newsList = array();
@@ -75,7 +42,6 @@ class News {
       $newsList[$i]['preview'] = $row['preview'];
       $i++;
     }
-    // return $result;
 
     return $newsList;
   }
