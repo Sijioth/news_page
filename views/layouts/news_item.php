@@ -9,7 +9,6 @@
             <div class="news__item--title">
                 <a href="#openModal-<?php echo $newsItem['id'];?>">
                     <h3>
-                        <?php echo $newsItem['id'];?>
                         <?php echo $newsItem['title'];?>
                     </h3>
                 </a>
