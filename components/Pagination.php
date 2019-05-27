@@ -93,7 +93,7 @@ class Pagination
 
             # Если текущая это текущая страница, ссылки нет и добавляется класс active
             if ($page == $this->current_page) {
-                $links .= '<li class="active"><a href="#">' . $page . '</a></li>';
+                $links .= '<li class="active"><a href="#" class="page-button" data-id="' . $page . '">' . $page . '</a></li>';
             } else {
                 # Иначе генерируем ссылку
                 $links .= $this->generateHtml($page);
@@ -143,7 +143,8 @@ class Pagination
         $currentURI = preg_replace('~/page-[0-9]+~', '', $currentURI);
         # Формируем HTML код ссылки и возвращаем
         return
-                '<li><a href="' . $currentURI . $this->index . $page . '">' . $text . '</a></li>';
+                '<li><a href="#" class="page-button" data-id="' . $page . '">' . $text . '</a></li>';
+                // '<li><a href="' . $currentURI . $this->index . $page . '" class="page-button" data-id="' . $page . '">' . $text . '</a></li>';
     }
 
     /**
@@ -154,7 +155,7 @@ class Pagination
     private function limits()
     {
         # Вычисляем ссылки слева (чтобы активная ссылка была посередине)
-        $left = $this->current_page - round($this->max / 2);
+        $left = $this->current_page - ceil($this->max / 2);
 
         # Вычисляем начало отсчёта
         $start = $left > 0 ? $left : 1;
@@ -205,7 +206,7 @@ class Pagination
     private function amount()
     {
         # Делим и возвращаем
-        return round($this->total / $this->limit);
+        return ceil($this->total / $this->limit);
     }
 
 }

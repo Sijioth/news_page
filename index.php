@@ -10,8 +10,8 @@ error_reporting(E_ALL);
 // 2. Include system files
 define('ROOT', dirname(__FILE__));
 require_once(ROOT.'/components/Autoload.php');
-require_once(ROOT.'/components/Router.php');
-require_once(ROOT.'/components/Db.php');
+// require_once(ROOT.'/components/Router.php');
+// require_once(ROOT.'/components/Db.php');
 
 // 3. Establish database connection
 
@@ -19,13 +19,13 @@ require_once(ROOT.'/components/Db.php');
 $router = new Router;
 $router->run();
 
-$con = mysqli_connect("localhost", "root", "", "impacto_site");
-mysqli_set_charset($con, "utf-8");
+// $con = mysqli_connect("localhost", "root", "", "impacto_site");
+// mysqli_set_charset($con, "utf-8");
 
-// Check connection
-if (mysqli_connect_errno()) {
-  echo "Failed to connect toMySQL" . mysqli_connect_error();
-}
+// // Check connection
+// if (mysqli_connect_errno()) {
+//   echo "Failed to connect toMySQL" . mysqli_connect_error();
+// }
 
 // $query = "SELECT ...";
 // $info = mysqli_query($con, $query);
